@@ -125,7 +125,7 @@ namespace stinkFLAC
 
         private void SongProgressSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-
+            MediaElement.Position = TimeSpan.FromMilliseconds(SongProgressSlider.Value);
         }
     }
 }
